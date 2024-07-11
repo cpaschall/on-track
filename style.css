@@ -1,0 +1,30 @@
+.masteHead {
+    border: 1px solid black;
+    display: flex;
+}
+
+.fitness {
+    border: 1px solid black;
+}
+
+.nutrition {
+    border: 1px solid black;
+}
+
+.calendar {
+    border: 1px solid black;
+}
+
+.misc {
+    border: 1px solid black;
+}
+
+.footerNav {
+    border: 1px solid black;
+}
+
+.logDay1 {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
