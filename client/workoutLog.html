@@ -1,0 +1,921 @@
+<link rel="stylesheet" href="./style.css">
+<section>
+    <h3>Workout Log</h3>
+    <div>
+        <a href="./index.html"><h4>Home</h4></a>
+    </div>
+    <div class="oneRepMax">
+        <table>
+            <tr>
+                <th colspan="2">Main Lift</th>
+                <th colspan="2">Accessory 1</th>
+                <th colspan="2">Accessory 2</th>
+            </tr>
+            <tr>
+                <th>Lift</th>
+                <th>1RM</th>
+                <th>Lift</th>
+                <th>1RM</th>
+                <th>Lift</th>
+                <th>1RM</th>
+            </tr>
+            <tr>
+                <td><label for="ohp">Overhead Press</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="ohp" value="0"></td>
+                <td><label for="cgbp">Close Grip Bench Press</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="cgbp" value="0"></td>
+                <td><label for="urRow">Upright Row</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="urRow" value="0"></td>
+            </tr>
+            <tr>
+                <td><label for="dl">Deadlift</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="dl" value="0"></td>
+                <td><label for="bntRow">Bent Row</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="bntRow" value="0"></td>
+                <td><label for="bbCurl">Barbell Curl</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="bbCurl" value="0"></td>
+            </tr>
+            <tr>
+                <td><label for="bench">Bench Press</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="bench" value="0"></td>
+                <td><label for="incBench">Incline Bench Press</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="incBench" value="0"></td>
+                <td><label for="sc">Skullcrusher</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="sc" value="0"></td>
+            </tr>
+            <tr>
+                <td><label for="squat">Squat</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="squat" value="0"></td>
+                <td><label for="sldl">Straight-Leg Deadlift</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="sldl" value="0"></td>
+                <td><label for="rvbc">Reverse Barbell Curl</label></td>
+                <td><input type="number" min="0" step="5" class="oneRmInputs" id="rvbc" value="0"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="wokoutLogTemplate weekOne">
+        <h3>Week 1</h3>
+        <form action="./week1.html"> 
+            <table>
+                <tr>
+                    <th class="logColName">Exercise</th>
+                    <th class="logColName">Set</th>
+                    <th class="logColName">Weight</th>
+                    <th class="logColName">% 1RM</th>
+                    <th class="logColName">Rep Goal</th>
+                    <th class="logColName">Reps Completed</th>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Warmup)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w1me1wus1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1wus2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1wus3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" min="0" step="5" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">3</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1wus1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1wus2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1wus3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Working Set)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w1me1wss1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1wss2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1wss3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">65%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">75%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">85%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5+</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1wss1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1wss2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1wss3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 2 (BBB)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w1me1bbbs1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1bbbs2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1bbbs3">3</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1bbbs4">4</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1bbbs5">5</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">55%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">45%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1bbbs1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1bbbs2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1bbbs3"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1bbbs4"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1bbbs5"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 3 (Accessory 1)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w1me1acc1s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1acc1s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1acc1s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">70%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1acc1s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1acc1s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1acc1s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 4 (Accessory 2)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w1me1acc2s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1acc2s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w1me1acc2s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">70%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1acc2s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1acc2s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w1me1acc2s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="wokoutLogTemplate weekTwo">
+        <h3>Week 2</h3>
+        <form action="/week2"> 
+            <table>
+                <tr>
+                    <th class="logColName">Exercise</th>
+                    <th class="logColName">Set</th>
+                    <th class="logColName">Weight</th>
+                    <th class="logColName">% 1RM</th>
+                    <th class="logColName">Rep Goal</th>
+                    <th class="logColName">Reps Completed</th>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Warmup)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w2me1wus1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1wus2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1wus3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">3</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1wus1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1wus2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1wus3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Working Set)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w2me1wss1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1wss2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1wss3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">70%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">80%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">90%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">3</td></tr>
+                            <tr><td class="repGoal logCell">3</td></tr>
+                            <tr><td class="repGoal logCell">3+</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1wss1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1wss2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1wss3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 2 (BBB)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w2me1bbbs1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1bbbs2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1bbbs3">3</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1bbbs4">4</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1bbbs5">5</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">55%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">45%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1bbbs1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1bbbs2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1bbbs3"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1bbbs4"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1bbbs5"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 3 (Accessory 1)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w2me1acc1s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1acc1s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1acc1s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">70%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">80%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">8</td></tr>
+                            <tr><td class="repGoal logCell">8</td></tr>
+                            <tr><td class="repGoal logCell">6</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1acc1s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1acc1s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1acc1s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 4 (Accessory 2)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w2me1acc2s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1acc2s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w2me1acc2s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">70%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">80%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">8</td></tr>
+                            <tr><td class="repGoal logCell">8</td></tr>
+                            <tr><td class="repGoal logCell">6</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1acc2s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1acc2s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w2me1acc2s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="wokoutLogTemplate weekThree">
+        <h3>Week 3</h3>
+        <form action="/week3"> 
+            <table>
+                <tr>
+                    <th class="logColName">Exercise</th>
+                    <th class="logColName">Set</th>
+                    <th class="logColName">Weight</th>
+                    <th class="logColName">% 1RM</th>
+                    <th class="logColName">Rep Goal</th>
+                    <th class="logColName">Reps Completed</th>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Warmup)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w3me1wus1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1wus2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1wus3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">3</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1wus1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1wus2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1wus3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Working Set)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w3me1wss1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1wss2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1wss3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">75%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">85%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">95%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">3</td></tr>
+                            <tr><td class="repGoal logCell">1+</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1wss1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1wss2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1wss3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 2 (BBB)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w3me1bbbs1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1bbbs2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1bbbs3">3</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1bbbs4">4</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1bbbs5">5</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">55%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">45%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1bbbs1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1bbbs2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1bbbs3"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1bbbs4"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1bbbs5"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 3 (Accessory 1)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w3me1acc1s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1acc1s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1acc1s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">65%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">75%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">85%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1acc1s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1acc1s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1acc1s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 4 (Accessory 2)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w3me1acc2s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1acc2s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w3me1acc2s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">65%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">75%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">85%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1acc2s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1acc2s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w3me1acc2s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="wokoutLogTemplate weekFour">
+        <h3>Week 4</h3>
+        <form action="/week4"> 
+            <table>
+                <tr>
+                    <th class="logColName">Exercise</th>
+                    <th class="logColName">Set</th>
+                    <th class="logColName">Weight</th>
+                    <th class="logColName">% 1RM</th>
+                    <th class="logColName">Rep Goal</th>
+                    <th class="logColName">Reps Completed</th>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Warmup)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w4me1wus1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1wus2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1wus3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">3</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1wus1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1wus2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1wus3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 1 (Working Set)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w4me1wss1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1wss2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1wss3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1wss1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1wss2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1wss3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 2 (BBB)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w4me1bbbs1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1bbbs2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1bbbs3">3</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1bbbs4">4</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1bbbs5">5</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">45%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                            <tr><td class="repGoal logCell">10</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1bbbs1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1bbbs2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1bbbs3"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1bbbs4"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1bbbs5"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 3 (Accessory 1)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w4me1acc1s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1acc1s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1acc1s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1acc1s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1acc1s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1acc1s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="exName">Exercise 4 (Accessory 2)</td>
+                    <td>
+                        <table>
+                            <tr><td class="set logCell"><label for="w4me1acc2s1">1</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1acc2s2">2</label></td></tr>
+                            <tr><td class="set logCell"><label for="w4me1acc2s3">3</label></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                            <tr><td><input type="number" value="0" class="weight logCell"></input></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="oneRmPrcnt logCell">40%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">50%</td></tr>
+                            <tr><td class="oneRmPrcnt logCell">60%</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                            <tr><td class="repGoal logCell">5</td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1acc2s1"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1acc2s2"></td></tr>
+                            <tr><td><input type="number" value="0" class="repCom logCell" id="w4me1acc2s3"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</section>
